@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
+
 gem 'rails', '3.2.13'
 
 gem 'pg' # replacing SQLite w/ PostgreSQL
-
+gem 'sorcery'
 
 # Gems used only for assets and not required
 # in production environments by default.
