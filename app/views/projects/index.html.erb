@@ -1,0 +1,9 @@
+<h1>Listing projects</h1>
+
+<% @project.each do |proj|  %>
+<h2><%= proj.title %></h2> 
+<%= proj.description %><br>
+<%= proj.goal %>
+<% end %>
+
+<strong><%= @poop %></strong>
