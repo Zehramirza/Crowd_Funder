@@ -12,6 +12,7 @@ gem 'thin'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'bootstrap-sass', '~> 2.2.2.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -20,6 +21,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
 
 group :tools do
   gem 'guard-test' # automatically runs our tests whenever there have been changes made to them
