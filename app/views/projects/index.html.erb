@@ -2,8 +2,10 @@
 
 <% @project.each do |proj|  %>
 <h2><%= proj.title %></h2> 
+<%= proj.teaser %> <br>
 <%= proj.description %><br>
 <%= proj.goal %>
+
 <% end %>
 
 <strong><%= @poop %></strong>

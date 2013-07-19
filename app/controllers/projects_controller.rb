@@ -2,10 +2,10 @@ class ProjectsController < ApplicationController
 
 def index
 	@project = Project.all
-	@poop = 'this is poop'
 end
 
 def show 
+	@project = Project.find(params[:id])
 end
 
 def new

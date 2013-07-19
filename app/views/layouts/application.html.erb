@@ -8,6 +8,21 @@
 </head>
 <body>
 
+<!-- this should be the navigation links for the project -->
+<div class="navbar">
+	<ul>
+
+		<li class="<%= 'active' if current_page? root_path %>">
+			<%= link_to 'Home', root_path %>
+		</li>
+
+		<li class="<%= 'active' if current_page? projects_path %>">
+			<%= link_to 'Projects', projects_path %>
+		</li>
+	</ul>
+
+</div>
+
 <%= yield %>
 
 </body>
