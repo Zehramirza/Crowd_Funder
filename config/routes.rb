@@ -9,6 +9,8 @@ Crowdfunder::Application.routes.draw do
 
   resources :projects 
 
+  resource :session, :only => [:new, :create, :destroy]
+
 
 
   # The priority is based upon order of creation:
