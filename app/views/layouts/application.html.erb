@@ -12,7 +12,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="#">CrowdFunder</a>
+      <a class="brand" href="/">CrowdFunder</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="<%= 'active' if (current_page? root_path) %>">
@@ -34,9 +34,13 @@
     </div>
   </div>
 </div>
+<% if flash[:alert] %>
+<p class="alert"><%= flash[:alert] %></p>
+<% end %>
 <% if flash[:notice] %>
 <p class="alert"><%= flash[:notice] %></p>
 <% end %>
+
 
 <%= yield %>
 

@@ -20,7 +20,7 @@ def create
     auto_login(@user)
     redirect_to root_path, :notice => "Account created"
   else
-    flash.now[:alert] = "There were some problems in your information"
+    flash[:alert] = "Try again"
     render :new
   end
 end
